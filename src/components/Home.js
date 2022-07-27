@@ -14,14 +14,14 @@ function Home() {
           variant="h2"
           textAlign={"center"}
           marginBottom={5}
-          fontFamily={"Helvetica"}
+          fontFamily={"Roboto"}
         >
           Welcome to Alumni Portal{" "}
         </Typography>{" "}
         <Typography align="center">
           <Button
             onClick={NavigateToSignUp}
-            variant="contained"
+            variant="outlined"
             size="large"
             color="primary"
             marginTop={5}

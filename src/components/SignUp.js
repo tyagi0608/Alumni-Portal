@@ -16,16 +16,16 @@ import { useState } from "react";
 
 function SignUp() {
   const [open, setOpen] = useState(false);
-  const [myemail, setEmail] = useState("");
-  const [mypassword, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <div>
       <Dialog open={open} onClose={() => setOpen(false)}>
         <DialogTitle> Your login credentials are: </DialogTitle>{" "}
         <DialogContent>
-          <DialogContentText> Email: {myemail}</DialogContentText>{" "}
-          <DialogContentText> Password: {mypassword}</DialogContentText>{" "}
+          <DialogContentText> Email: {email}</DialogContentText>{" "}
+          <DialogContentText> Password: {password}</DialogContentText>{" "}
         </DialogContent>{" "}
         <DialogActions>
           <Button onClick={() => setOpen(false)}> OK </Button>{" "}
@@ -61,7 +61,7 @@ function SignUp() {
             type={"email"}
             variant="outlined"
             fullWidth
-            value={myemail}
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <FormLabel for="password"> Password: </FormLabel>{" "}
@@ -71,7 +71,7 @@ function SignUp() {
             type={"password"}
             variant="outlined"
             fullWidth
-            value={mypassword}
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />{" "}
           <Typography align="center">
